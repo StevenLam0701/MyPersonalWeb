@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About Lam Chak Fung – background, skills, and approach.">
+    <title>About · Lam Chak Fung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/Icon.jpeg" alt="Profile photo" class="brand-avatar" onerror="this.style.display='none'">
+                <span class="brand-name">Lam Chak Fung</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a class="active" href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li>
+                        <select id="lang-switch" aria-label="Language">
+                            <option value="en">EN</option>
+                            <option value="zh-Hant">繁</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="container narrow">
+            <h1 data-i18n="about.title">About</h1>
+            <p data-i18n="about.summary">Final-year student pursuing a Bachelor of Engineering (Hons) in Electronic Systems and Internet-of-Things at The Hong Kong Polytechnic University. Experienced in developing IoT solutions and electronic systems, with projects including a LoRa Localization System, Web Development, and Arduino Car.</p>
+            <div class="split">
+                <div>
+                    <h2 data-i18n="about.skills">Skills</h2>
+                    <ul class="checklist">
+                        <li>Programming Languages: C/C++, Python, Java, JavaScript</li>
+                        <li>HTML / CSS / Accessibility</li>
+                        <li>React / Vue / Modern SPA</li>
+                        <li>Node.js / APIs</li>
+                        <li>Wireless Communication Protocols (e.g., LoRa, Zigbee, Bluetooth, Wi-Fi)</li>
+                        <li>Machine Learning and AI integration in IoT</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 data-i18n="about.approach">Approach</h2>
+                    <p data-i18n="about.approach_d">I collaborate closely with stakeholders to define goals, validate assumptions, and deliver value iteratively. I prefer data-informed decisions with a bias for simplicity.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Lam Chak Fung. All rights reserved.</p>
+            <div class="social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="mailto:lamchakfung01@gmail.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CV / Resume of Lam Chak Fung.">
+    <title>CV · Lam Chak Fung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/Icon.jpeg" alt="Profile photo" class="brand-avatar" onerror="this.style.display='none'">
+                <span class="brand-name">Lam Chak Fung</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a class="active" href="cv.html" data-i18n="nav.cv">CV</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li>
+                        <select id="lang-switch" aria-label="Language">
+                            <option value="en">EN</option>
+                            <option value="zh-Hant">繁</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="container">
+            <h1 data-i18n="cv.title">Curriculum Vitae</h1>
+
+            <section id="cv-lock" class="card" data-pass="LamCV">
+                <div class="form-row">
+                    <label for="cv-pass">Password</label>
+                    <input id="cv-pass" type="password" placeholder="Enter password">
+                </div>
+                <div class="form-actions">
+                    <button id="cv-unlock" class="btn primary" type="button">Unlock</button>
+                </div>
+                <p class="form-note">For stronger protection, use a password-protected PDF. This gate only hides content on the page.</p>
+            </section>
+
+            <div id="cv-content" hidden>
+                <div class="cv-actions">
+                    <a class="btn primary" href="assets/Lam%20Chak%20Fung%27s%20CV.pdf" target="_blank" rel="noopener">Open PDF</a>
+                    <a class="btn" download href="assets/Lam%20Chak%20Fung%27s%20CV.pdf">Download</a>
+                </div>
+                <div class="embed-wrapper">
+                    <iframe title="Resume PDF" src="assets/Lam%20Chak%20Fung%27s%20CV.pdf" loading="lazy"></iframe>
+                    <p class="embed-fallback">If the PDF does not load, use the buttons above to open or download it.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Lam Chak Fung. All rights reserved.</p>
+            <div class="social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="mailto:lamchakfung01@gmail.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
+
+

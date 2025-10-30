@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional personal website of Lam Chak Fung – portfolio, CV, and contact.">
+    <title>Lam Chak Fung · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/Icon.jpeg" alt="Profile photo" class="brand-avatar" onerror="this.style.display='none'">
+                <span class="brand-name">Lam Chak Fung</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a class="active" href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li>
+                        <select id="lang-switch" aria-label="Language">
+                            <option value="en">EN</option>
+                            <option value="zh-Hant">繁</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1 data-i18n="home.hero_title">Designer / Developer crafting clean, human-centered experiences</h1>
+                    <div class="hero-meta">
+                        <span class="pill">Hong Kong</span>
+                        <span class="pill">Information Technology · Internet of Things</span>
+                        <a class="pill link" href="mailto:lamchakfung01@gmail.com">Get in touch</a>
+                    </div>
+                    <p data-i18n="home.hero_sub">I build reliable products with attention to detail and a focus on measurable outcomes. Explore selected work, learn more about me, or get in touch.</p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="portfolio.html" data-i18n="home.view_portfolio">View Portfolio</a>
+                        <a class="btn" href="cv.html" data-i18n="home.download_cv">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <img class="avatar-elevated" src="images/Icon.jpeg" alt="Portrait of Lam Chak Fung" onerror="this.src=''; this.alt=''; this.style.background='#e5e7eb'; this.style.height='240px'; this.style.borderRadius='16px';">
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.quotes">Golden Quotes</h2>
+                <div class="quote-card reveal" data-animate="zoom">
+                    <div id="quote-img" class="quote-img" aria-hidden="true"></div>
+                    <figure class="quote-body">
+                        <blockquote id="quote-text">"Simplicity is the soul of efficiency."</blockquote>
+                        <figcaption id="quote-author">— Austin Freeman</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.highlights">Highlights</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3 data-i18n="home.card1_t">Performance-minded</h3>
+                        <p data-i18n="home.card1_d">Optimizing for speed and accessibility to reach everyone, everywhere.</p>
+                    </article>
+                    <article class="card">
+                        <h3 data-i18n="home.card2_t">End-to-end delivery</h3>
+                        <p data-i18n="home.card2_d">From discovery and prototyping to deployment and iteration.</p>
+                    </article>
+                    <article class="card">
+                        <h3 data-i18n="home.card3_t">Collaborative</h3>
+                        <p data-i18n="home.card3_d">Clear communication and pragmatic solutions that align with business goals.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Lam Chak Fung. <span data-i18n="footer.rights">All rights reserved.</span></p>
+            <div class="social">
+                <a href="#" aria-label="LinkedIn" data-i18n="footer.linkedin">LinkedIn</a>
+                <a href="#" aria-label="GitHub" data-i18n="footer.github">GitHub</a>
+                <a href="mailto:lamchakfung01@gmail.com" aria-label="Email" data-i18n="footer.email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
+
+

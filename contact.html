@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Lam Chak Fung – send a message.">
+    <title>Contact · Lam Chak Fung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/Icon.jpeg" alt="Profile photo" class="brand-avatar" onerror="this.style.display='none'">
+                <span class="brand-name">Lam Chak Fung</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                    <li><a class="active" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li>
+                        <select id="lang-switch" aria-label="Language">
+                            <option value="en">EN</option>
+                            <option value="zh-Hant">繁</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="container narrow">
+            <h1 data-i18n="contact.title">Contact</h1>
+            <p data-i18n="contact.intro">Have a project or a question? I usually respond within 24–48 hours.</p>
+            <div class="contact-actions">
+                <a class="btn primary" href="mailto:lamchakfung01@gmail.com" aria-label="Email Lam Chak Fung" data-i18n="contact.email_me">Email me</a>
+                <button class="btn" type="button" id="copy-email" data-email="lamchakfung01@gmail.com" data-i18n="contact.copy_email">Copy email</button>
+            </div>
+
+            <form id="contact-form" class="contact-form" aria-label="Email form">
+                <div class="form-row">
+                    <label for="name" data-i18n="contact.name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                </div>
+                <div class="form-row">
+                    <label for="fromEmail" data-i18n="contact.your_email">Your Email</label>
+                    <input id="fromEmail" name="fromEmail" type="email" autocomplete="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="subject" data-i18n="contact.subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="Project inquiry / Collaboration / Other" required>
+                </div>
+                <div class="form-row">
+                    <label for="message" data-i18n="contact.message">Message</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Tell me a little about your goals, timeline, and budget (optional)." required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn primary" type="submit" data-i18n="contact.open_email_app">Open email app</button>
+                    <button class="btn" type="reset" data-i18n="contact.reset">Reset</button>
+                </div>
+                <p class="form-note" data-i18n="contact.note">This form opens your mail app with a pre-filled email. For hosted forms, we can integrate a service later.</p>
+            </form>
+
+            <div id="toast" class="toast" role="status" aria-live="polite" hidden>Email copied</div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Lam Chak Fung. All rights reserved.</p>
+            <div class="social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="mailto:lamchakfung01@gmail.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
+
+

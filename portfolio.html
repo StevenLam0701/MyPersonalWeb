@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Selected projects by Lam Chak Fung.">
+    <title>Portfolio · Lam Chak Fung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="images/Icon.jpeg" alt="Profile photo" class="brand-avatar" onerror="this.style.display='none'">
+                <span class="brand-name">Lam Chak Fung</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                    <li><a class="active" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="cv.html" data-i18n="nav.cv">CV</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+                    <li>
+                        <select id="lang-switch" aria-label="Language">
+                            <option value="en">EN</option>
+                            <option value="zh-Hant">繁</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="container">
+            <h1 data-i18n="portfolio.title">Portfolio</h1>
+            <div class="grid projects">
+                <article class="project-card">
+                    <div class="project-thumb" role="img" aria-label="Hong Kong Food Carnival Booth Reservation System thumbnail" style="background-image: url('images/EIE4432 Project.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-body">
+                        <h2>Hong Kong Food Carnival Booth Reservation System</h2>
+                        <p>EIE4432 Web Systems and Technologies. A web application for vendors to reserve booths, manage availability, and streamline event coordination.</p>
+                        <div class="project-meta">
+                            <span class="tag">Web</span>
+                            <span class="tag">Reservation</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">React,Html,JS</span>
+                        </div>
+                        <a class="btn small" href="https://youtu.be/etO15BFTmLc" target="_blank" rel="noopener">Watch Demo</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb" role="img" aria-label="Online Bookstore System thumbnail" style="background-image: url('images/EIE3320 Project.png'); background-size: cover; background-position: center;"></div>
+                    <div class="project-body">
+                        <h2>Online Bookstore System</h2>
+                        <p>EIE3320 Object-Oriented Programming.This project builds an Online Bookstore by adding a login system with role-based access control distinguishing students and admins, plus expanded admin functionalities and other functions as well.</p>
+                        <div class="project-meta">
+                            <span class="tag">Java</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">jsp,servlet</span>
+                            <span class="tag">Tomcat11</span>
+                        </div>
+                        <a class="btn small" href="https://youtu.be/FnxAVr8azi0" target="_blank" rel="noopener">Watch Demo</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-thumb" role="img" aria-label="LoRa-Based Localization System thumbnail" style="background-image: url('images/Lora.jpeg'); background-size: cover; background-position: center;"></div>
+                    <div class="project-body">
+                        <h2>LoRa-Based Localization System</h2>
+                        <p>Low-power, long-range localization using LoRa gateways and nodes for coarse indoor/outdoor positioning.</p>
+                        <div class="project-meta">
+                            <span class="tag">LoRa</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                        <a class="btn small" href="assets/lora-demo.mp4" target="_blank" rel="noopener">Watch Demo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Lam Chak Fung. All rights reserved.</p>
+            <div class="social">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="mailto:lamchakfung01@gmail.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+</html>
+
+
